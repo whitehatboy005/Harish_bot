@@ -9,13 +9,13 @@ def ai(txt):
         if 'generateContent' in m.supported_generation_methods:
             print(m.name)
     model = genai.GenerativeModel('gemini-pro')
-    response = model.generate_content("I am Harish Kumar created AI "+txt)
+    response = model.generate_content("Harish created this AI "+txt)
     return response.text
 
 
 
 
-st.title("Harish AI")
+st.title("Welcome to Harish AI")
 
 command = st.chat_input("how can I help you?")
 
@@ -37,8 +37,8 @@ if command:
             st.session_state.message.append({"role":"BOT","message":"Hi How are you?"})
     elif "who" in command:
         with st.chat_message("BOT"):
-            st.write("I am Harish AI")
-            st.session_state.message.append({"role":"BOT","message":"I am Harish AI"})
+            st.write("I am Harish AI Assistant")
+            st.session_state.message.append({"role":"BOT","message":"I am Harish AI Assistant"})
     else:
         with st.chat_message("BOT"):
             data = ai(command)
