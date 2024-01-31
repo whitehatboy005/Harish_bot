@@ -35,10 +35,27 @@ if command:
         with st.chat_message("BOT"):
             st.write("Hi How are you?")
             st.session_state.message.append({"role":"BOT","message":"Hi How are you?"})
-    elif "who" in command:
+    elif "who are you" in command:
         with st.chat_message("BOT"):
             st.write("I am Harish AI Assistant")
             st.session_state.message.append({"role":"BOT","message":"I am Harish AI Assistant"})
+    elif "Who are you" in command:
+        with st.chat_message("BOT"):
+            st.write("I am Harish AI Assistant")
+            st.session_state.message.append({"role":"BOT","message":"I am Harish AI Assistant"})
+    elif "fine" in command:
+        with st.chat_message("BOT"):
+            st.write("Good")
+            st.session_state.message.append({"role":"BOT","message":"Good"})
+    elif "Fine" in command:
+        with st.chat_message("BOT"):
+            st.write("Good")
+            st.session_state.message.append({"role":"BOT","message":"Good"})
+    elif "Hello" in command:
+        with st.chat_message("BOT"):
+            st.write("Hi,How are you?")
+            st.session_state.message.append({"role":"BOT","message":"Hi,How are you?"})
+
     else:
         with st.chat_message("BOT"):
             data = ai(command)
