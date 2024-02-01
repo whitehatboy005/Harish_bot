@@ -75,16 +75,16 @@ if command:
 
     elif "selvarajan" in command:
         with st.chat_message("BOT"):
-            st.write("Hello Selva bro I know you are Harish friend and Harish says you are loosu k*. Anywere, how are you friend?")
-            st.session_state.message.append({"role":"BOT","message":"Hello Selva bro I know you are Harish friend and Harish says you are loosu k*. Anywere, how are you friend?"})
+            st.write("Hello Selva bro I know you are Harish friend. How are you friend?")
+            st.session_state.message.append({"role":"BOT","message":"Hello Selva bro I know you are Harish friend. How are you friend?"})
     elif "Selvarajan" in command:
         with st.chat_message("BOT"):
-            st.write("Hello Selva bro I know you are Harish friend and my Harish says you are loosu k*. Anywere, how are you friend?")
-            st.session_state.message.append({"role":"BOT","message":"Hello Selva bro I know you are Harish friend and Harish says you are loosu k*. Anywere, how are you friend?"})
+            st.write("Hello Selva bro I know you are Harish friend. How are you friend??")
+            st.session_state.message.append({"role":"BOT","message":"Hello Selva bro I know you are Harish friend. How are you friend?"})
 
     elif "arikaran" in command:
         with st.chat_message("BOT"):
-            st.write("Hello Arikaran bro I know you are Harish friend. How are you friend")
+            st.write("Hello Arikaran bro I know you are Harish friend. How are you friend?")
             st.session_state.message.append({"role":"BOT","message":"Hello Arikaran bro I know you are Harish friend. How are you friend?"})
     elif "Arikaran" in command:
         with st.chat_message("BOT"):
@@ -162,7 +162,24 @@ if command:
         with st.chat_message("BOT"):
             st.write("Hello Jaghan bro I know you are Harish friend. How are you friend?")
             st.session_state.message.append({"role":"BOT","message":"Hello Jaghan bro I know you are Harish friend. How are you friend?"})
-
+    
+    elif "sundhar" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello Sundhar sir I know you are Harish mentor. How are you Sir?")
+            st.session_state.message.append({"role":"BOT","message":"Hello Sundhar sir I know you are Harish mentor. How are you Sir?"})
+    elif "Sundhar" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello Sundhar sir I know you are Harish mentor. How are you Sir?")
+            st.session_state.message.append({"role":"BOT","message":"Hello Sundhar sir I know you are Harish mentor. How are you Sir?"})
+    elif "Annamalai" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello Annamalai sir I know you are Harish mentor. How are you Sir?")
+            st.session_state.message.append({"role":"BOT","message":"Hello Annamalai sir I know you are Harish mentor. How are you Sir?"})
+    elif "annamalai" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello Annamalai sir I know you are Harish mentor. How are you Sir?")
+            st.session_state.message.append({"role":"BOT","message":"Hello Annamalai sir I know you are Harish mentor. How are you Sir?"})
+    
     else:
         with st.chat_message("BOT"):
             data = ai(command)
